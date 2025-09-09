@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    command: sh -c "uvicorn app.main:app --reload --port 7001 --host=0.0.0.0"
+    ports:
+      - 7001:7001
